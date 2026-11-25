@@ -78,9 +78,44 @@
       <section id="prestamo">
         <h2>Formulario de Préstamo</h2>
         <form action="#" method="get">
-          <!-- Define aquí o formulario -->
+          <label for="nombre">Nombre completo:</label>
+          <input type="text" id="nombre" name="nombre" required />
+
+          <label for="correo">Correo electrónico:</label>
+          <input type="email" id="correo" name="correo" required />
+
+          <label for="libro">Selecciona un libro:</label>
+          <select id="libro" name="libro">
+            <option>El misterio del bosque</option>
+            <option>Viaje a las estrellas</option>
+            <option>Cien años de soledad</option>
+            <option>La casa de los espíritus</option>
+            <option>El juego del ángel</option>
+          </select>
+
+          <input type="checkbox" id="normas" name="normas" required />
+          <label for="normas">Acepto las normas de préstamo</label>
+
+          <button type="submit">Solicitar Préstamo</button>
         </form>
       </section>
+
+      <section id="descripcion">
+        <h2>Sobre la Biblioteca</h2>
+        <p>
+          Nuestra biblioteca fue fundada en 1980 con el objetivo de fomentar la
+          lectura y el aprendizaje en la comunidad.
+        </p>
+        <p>
+          Contamos con miles de libros, revistas y material digital disponible
+          para todos nuestros socios.
+        </p>
+      </section>
     </main>
+
+    <footer>
+      <p>Contacto: info@bibliotecavirtual.com | Teléfono: 123-456-789</p>
+      <p>&copy; 2025 Biblioteca Virtual</p>
+    </footer>
   </body>
 </html>
